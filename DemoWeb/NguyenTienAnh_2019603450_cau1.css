@@ -1,0 +1,164 @@
+*{
+    margin: 0 ;
+}
+.header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+    padding: 0 20px;
+}
+.logo{
+    margin-top: 10px;
+    width:120px;
+    height: 120px;
+    border-radius: 0%;
+}
+h1{
+    color: #00CC66;
+}
+.nav{
+    background-color:#00CC66;
+    border-radius: 5px;
+
+}
+.nav ul{
+    padding: 0;
+    display: flex;
+	color: #00CC66;
+	margin-top: 10px;
+    /* justify-content: space-evenly;
+    cursor: pointer; */
+}
+.nav li{
+    list-style: none;
+    width: 70px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+.nav li:hover a{
+    color: red
+}
+.search{
+    width: 250px;
+}
+.menu{
+    margin-top: 5px;
+    background-color:#00CC66;
+}
+.menu ul{
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.menu li{
+    list-style: none;
+    width: 100%;
+    padding: 10px ;
+    text-align: center;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+.menu li:hover{
+    background-color: #00CC66;
+}
+.menu li a:hover{
+    color: #ffff33;
+}
+.sub_menu{
+    display:none !important; 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+.sub_menu li {
+    padding: 12px 20px;
+    padding-right: 30px;
+    background-color: #00CC66;
+    border: 1px dotted white;
+}
+.sub_menu li a{
+    color: black;
+}
+.menu li:hover .sub_menu{
+    display: block !important;
+}
+.sub_menu li:hover{
+    background-color: #00CC66;
+}
+section{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
+}
+.phan1{
+    width: 33%;
+    
+    border: 1px solid gray;
+}
+.tenphan1{
+    background-color: #00CC66;
+    color: white;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.anh{
+    width: 120px;
+    height: 120px;
+    float: left;
+    padding: 10px;
+}
+.phan2{
+    width: 25%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid gray;
+}
+.video{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+#a p:hover{
+    color: red;
+}
+span{
+    color: gray;
+}
+.phanlogo{
+    width: 100%;
+    margin-top: 40px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 16%;
+    height: 120px;
+}

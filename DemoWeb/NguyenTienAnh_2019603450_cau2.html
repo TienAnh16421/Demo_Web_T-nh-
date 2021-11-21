@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		form{
+			width: 500px;
+			margin: auto;
+			margin-top: 100px;
+			border: 3px solid rgba(0, 0, 0, 0.1);
+			box-shadow: 5px 5px 8px silver;
+		}
+		table{
+			margin: auto;
+		}
+		table td{
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tbody>
+				<tr>
+					<td><label for="input"><b>Nhập số nguyên:</b></label></td>
+					<td><input type="text" id="nhap" name="input" size="30px" maxlength="255"></td>
+				</tr>
+				<tr>
+					<td><b>Số chữ số lẻ:</b></td>
+					<td><input type="text" id="xuat" name="output" size="30px"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button type="button" onclick="myf()">Đếm</button>
+						<button type="reset">Hủy bỏ</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+	<script type="text/javascript">
+		function myf(){
+			var n = parseInt(document.getElementById("nhap").value);
+
+			var count = 0;
+			while (n >= 1){
+				var x = n % 10;
+				if (x % 2 != 0){
+					count++;
+				}
+				n = parseInt(n/10);
+			}
+
+			document.getElementById("xuat").value = count;
+		}
+	</script>
+</body>
+</html>
